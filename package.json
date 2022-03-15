@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,10 @@
     "chalk": "^5.0.0",
     "chalk-animation": "^1.6.0",
     "figlet": "^1.5.2",
-    "gradient": "^0.2.0",
+    "gradient-string": "^2.0.0",
     "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
